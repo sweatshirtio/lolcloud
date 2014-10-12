@@ -3,6 +3,8 @@ require 'listen'
 
 module Lolcloud
   class Listener
+    include Logging
+
     attr_reader :sync_dirs, :default_sync_dir
 
     def initialize(options = {})
@@ -12,9 +14,9 @@ module Lolcloud
 
     def listen_up
       listener = Listen.to(sync_dirs) do |modified, added, removed|
-        puts "modified absolute path: #{modified}"
-        puts "added absolute path: #{added}"
-        puts "removed absolute path: #{removed}"
+        logging.info "Modified: #{modified}"
+        logging.info "Added: #{added}"
+        logging.info "Removed: #{removed}"
       end
 
       listener.start
