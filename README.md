@@ -1,8 +1,20 @@
 lolcloud
 ========
 
-An astonishgly simple open-source spinoff of Dropbox.
+An astonishingly simple open-source spinoff of Dropbox.
 Secure storage for pennies.
+```
+           _ _
+          / / |
+         /_/ /
+         \_\/ \
+             \ \
+   _;______   \_;
+ ,'o       `.
+[_,          )&
+ `._        /
+    ll`--'ll
+```
 Sync directories as you damn-well please, sir.
 
 ## Installation
