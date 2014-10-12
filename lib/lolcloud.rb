@@ -1,5 +1,5 @@
-require "lolcloud/version"
+require 'lolcloud/version'
+require 'lolcloud/listener'
 
 module Lolcloud
-  # Your code goes here...
 end
